@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  微博练习
+//
+//  Created by Silver on 15/4/2.
+//  Copyright (c) 2015年 Silver. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+
+
+#import "Common.h"
+#import <UIKit/UIKit.h>
+
+
+#import "UIViewExt.h"
+
+
+#endif

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hXC-1b-6Su">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UOI-fM-veY">
+            <objects>
+                <navigationController id="hXC-1b-6Su" customClass="NavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FAn-nm-DDP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YG4-ho-Iga" kind="relationship" relationship="rootViewController" id="4FH-wH-ge9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYt-cL-nZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133.86666666666667" y="355"/>
+        </scene>
+        <!--Discover Controller-->
+        <scene sceneID="yKf-zk-kEN">
+            <objects>
+                <viewController id="YG4-ho-Iga" customClass="DiscoverController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A4G-cQ-TlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="C2q-by-i93"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YcM-cK-2nU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFO-p1-39l">
+                                <rect key="frame" x="10" y="74" width="80" height="80"/>
+                                <state key="normal" image="附近微博.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PxZ-U5-fKx" kind="push" id="jDK-1e-4Lm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ry-te-jL7">
+                                <rect key="frame" x="100" y="74" width="80" height="80"/>
+                                <state key="normal" image="附近的人.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2vf-QU-wsZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ej-ux-kwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="352"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="QVI-Dg-Nwa">
+            <objects>
+                <viewController id="PxZ-U5-fKx" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KiV-SY-if8"/>
+                        <viewControllerLayoutGuide type="bottom" id="c4U-E1-QwG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mtm-MW-jle">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DkP-rN-VeE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXW-YY-cX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="附近微博.jpg" width="184" height="184"/>
+        <image name="附近的人.jpg" width="184" height="184"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

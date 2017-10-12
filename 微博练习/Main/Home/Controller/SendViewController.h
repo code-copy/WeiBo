@@ -1,0 +1,17 @@
+//
+//  SendViewController.h
+//  微博练习
+//
+//  Created by Silver on 15/4/16.
+//  Copyright (c) 2015年 Silver. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#include "BaseViewController.h"
+#import "ZoomingImgView.h"
+#import <CoreLocation/CoreLocation.h>
+
+@interface SendViewController : BaseViewController<UINavigationControllerDelegate,UITextViewDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate,ZoomingImgViewDelegate,CLLocationManagerDelegate>
+
+
+@end
